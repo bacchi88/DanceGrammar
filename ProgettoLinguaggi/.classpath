@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="program/" kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="lib/jl1.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/wiiusej.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/C:/Users/mwimola/Desktop/WiiuseJ%200.12a%20Javadoc/WiiuseJ%200.12a%20Javadoc/doc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/mwimola/Desktop/vlcj-3.0.1/vlcj-3.0.1.jar" sourcepath="C:/Users/mwimola/Desktop/vlcj-3.0.1/vlcj-3.0.1-javadoc.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/mwimola/Desktop/vlcj-3.0.1/vlcj-3.0.1-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/mwimola/Desktop/vlcj-3.0.1/vlcj-3.0.1-javadoc.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

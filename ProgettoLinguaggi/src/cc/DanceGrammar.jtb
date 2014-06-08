@@ -1,0 +1,191 @@
+/**
+ * JTB template file created by SF JavaCC plugin 1.5.17+ wizard for JTB 1.4.0.2+ and JavaCC 1.5.0+
+ */options{  JDK_VERSION = "1.5";  static = true;  JTB_P = "cc";
+}
+PARSER_BEGIN(MyParser)
+package cc;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+public class MyParser
+{
+  public static void main(String args []) throws ParseException, FileNotFoundException
+    {
+    // MyParser parser = new MyParser(System.in)
+    MyParser parser = new MyParser(new FileInputStream("C:/Temp/Prova.txt"));
+    try
+    {
+      
+        System.out.println("Reading from standard input...");
+      	System.out.print("Enter an expression :");
+      	parser.Scope();
+      	System.out.println("OK!");
+   }
+      catch (Exception e)
+      {
+        System.out.println("NOK.");
+        System.out.println(e.getMessage());
+      }
+      catch (Error e)
+      {
+        System.out.println("Oops.");
+        System.out.println(e.getMessage());
+      }
+    }
+  }
+
+
+PARSER_END(MyParser)
+
+SKIP :
+{
+  " "
+| "\r"
+| "\t"
+| "\n"
+}
+
+TOKEN :
+{
+  < TITLE : "title">
+| < COREOGRAPHY : "coreography">
+| < ARTIST : "artist" >
+| < AUDIO : "audio" >
+| < VIDEO : "video" >
+| < DEFINE: "define" >
+| < TIMES : "times" >
+| < POINTS : "points" >
+| < SPAN : "span" >
+| < REPEAT : "repeat" >
+| < DO : "do" >
+| < ONITERATION : "on iteration" >
+| < DIR : "left" | "right" | "up" | "down" | "forward" >
+| < SWING : "swing" >
+| < TO : "to" >
+| < FIST : "fist" >
+| < STEADY : "steady" >
+| < SHAKE : "shake" >
+| < FREE : "free" >
+| < COLON : ":">
+| < SEMICOLON : ";" >
+| < O_BR : "{" >
+| < C_BR : "}" >
+}
+
+TOKEN :
+{
+  < ID : < LETTER > ( < LETTER > | < NUM > )* >
+| < CHARSEQ : "\"" ( < LETTER > | " " | < NUM > | < SYMBOL >)+ "\"" >
+| < NUM : "0" | ["1"-"9"](["0"-"9"])* >
+| < LETTER: ["A"-"Z"] | ["a"-"z"] >
+| < SYMBOL : "_" | "." | "/" | ":" | "-">
+
+}
+
+void Scope() :
+{}
+{
+  Title() Artist() Audio() Video() Body() < EOF >
+}
+
+void Title() :
+{}
+{
+  < TITLE > < COLON > < CHARSEQ > < SEMICOLON >
+}
+
+void Artist() :
+{}
+{
+  < ARTIST > < COLON > < CHARSEQ > < SEMICOLON >
+}
+
+void Audio() :
+{}{
+  < AUDIO > < COLON > < CHARSEQ > < SEMICOLON >}
+
+void Video() :
+{}
+{
+  < VIDEO > < COLON > < CHARSEQ > < SEMICOLON >
+}
+
+void Body() :
+{}
+{
+  < COREOGRAPHY > < COLON > <O_BR > ( Statement() )* <C_BR >
+}
+
+void Statement() :
+{}
+{
+	Instruction() | Definition ()
+}
+
+void Definition() :
+{}
+{
+	< DEFINE > < ID >  Move() < SEMICOLON >
+}
+
+void Instruction() :
+{}
+{
+	SingleStep() | Cycle() 
+}
+
+void SingleStep():
+{}
+{
+	< DO > ( Move() | < ID >) < SEMICOLON >
+}
+
+void Move() :
+{}
+{
+	LongMove() | ShortMove()
+}
+
+void LongMove():
+{}
+{
+	(  LongMoveInfo() | < FREE > ) (SpanExp())?
+}
+
+void LongMoveInfo() :{}{
+  ( < SWING > <DIR > < TO > | < STEADY > )  Details() }
+void ShortMove():
+{}
+{
+	(< FIST > | <SHAKE > ) Details()
+}
+
+void Details() :{}{
+  < DIR > (PointsExp())?}
+
+void Cycle():
+{}
+{
+	< REPEAT > <NUM > <TIMES > < O_BR > (Statement() | OnIteration())+ <C_BR >
+}
+
+void OnIteration():
+{}{
+  < ONITERATION > <O_BR > ( OnIterationElement() )+ < C_BR >}
+
+void OnIterationElement() :
+{}{
+   <NUM > < COLON > (Move() | <ID>)  < SEMICOLON >}
+
+void PointsExp() : 
+{}
+{
+	< POINTS > < COLON > <NUM >
+}
+
+void SpanExp() : 
+{}
+{
+	< SPAN > < COLON > <NUM >
+}

@@ -1,0 +1,119 @@
+title:wannabe
+artist:spice girls
+audio:c:/temp/wannabe.mp3
+video:c:/temp/wannabe.mp4
+<00:01>free
+<00:05>steady right points: 100
+<00:07>steady forward points: 100
+<00:09>free
+<00:10>steady right points: 100
+<00:12>steady forward points: 100
+<00:14>fist up points: 50
+<00:15>fist up points: 50
+<00:16>fist up points: 50
+<00:17>fist up points: 50
+<00:18>free
+<00:19>shake up points: 50
+<00:20>shake down points: 50
+<00:21>shake up points: 50
+<00:22>shake down points: 50
+<00:23>swing up to right points: 100
+<00:25>free
+<00:27>shake up points: 50
+<00:28>shake down points: 50
+<00:29>shake up points: 50
+<00:30>shake down points: 50
+<00:31>swing up to right points: 100
+<00:33>free
+<00:35>free
+<00:36>steady right points: 100
+<00:38>steady forward points: 100
+<00:40>fist up points: 50
+<00:41>fist up points: 50
+<00:42>fist up points: 50
+<00:43>fist up points: 50
+<00:44>free
+<00:45>steady left points: 100
+<00:47>swing left to right points: 40
+<00:48>swing left to right points: 40
+<00:49>swing left to right points: 40
+<00:50>swing left to right points: 40
+<00:51>swing left to right points: 40
+<00:52>swing left to right points: 40
+<00:53>free
+<00:54>steady left points: 100
+<00:56>swing left to right points: 40
+<00:57>swing left to right points: 40
+<00:58>swing left to right points: 40
+<00:59>swing left to right points: 40
+<01:00>swing left to right points: 40
+<01:01>swing left to right points: 40
+<01:02>steady right points: 100
+<01:04>free
+<01:07>swing up to right points: 100
+<01:09>free
+<01:11>shake up points: 50
+<01:12>shake down points: 50
+<01:13>shake up points: 50
+<01:14>shake down points: 50
+<01:15>swing up to right points: 100
+<01:17>free
+<01:20>steady right points: 100
+<01:22>steady forward points: 100
+<01:24>fist up points: 50
+<01:25>fist up points: 50
+<01:26>fist up points: 50
+<01:27>fist up points: 50
+<01:28>free
+<01:29>steady left points: 100
+<01:31>swing left to right points: 50
+<01:32>swing left to right points: 50
+<01:33>swing left to right points: 50
+<01:34>swing left to right points: 50
+<01:35>swing left to right points: 50
+<01:36>swing left to right points: 50
+<01:37>steady left points: 100
+<01:39>swing left to right points: 50
+<01:40>swing left to right points: 50
+<01:41>swing left to right points: 50
+<01:42>swing left to right points: 50
+<01:43>swing left to right points: 50
+<01:44>swing left to right points: 50
+<01:45>free
+<01:50>free
+<01:55>free
+<01:59>steady down points: 100
+<02:00>steady forward points: 100
+<02:01>steady down points: 100
+<02:02>steady right points: 100
+<02:03>steady left points: 100
+<02:05>swing left to right points: 40
+<02:06>swing left to right points: 40
+<02:07>swing left to right points: 40
+<02:08>swing left to right points: 40
+<02:09>swing left to right points: 40
+<02:10>swing left to right points: 40
+<02:11>free
+<02:12>steady left points: 100
+<02:14>swing left to right points: 40
+<02:15>swing left to right points: 40
+<02:16>swing left to right points: 40
+<02:17>swing left to right points: 40
+<02:18>swing left to right points: 40
+<02:19>swing left to right points: 40
+<02:20>free
+<02:21>steady left points: 100
+<02:23>free
+<02:27>steady down points: 100
+<02:28>steady forward points: 100
+<02:29>steady down points: 100
+<02:30>steady right points: 100
+<02:31>free
+<02:33>steady down points: 100
+<02:34>steady forward points: 100
+<02:35>steady down points: 100
+<02:36>steady right points: 100
+<02:37>free
+<02:42>free
+<02:47>steady left points: 100
+<02:49>free
